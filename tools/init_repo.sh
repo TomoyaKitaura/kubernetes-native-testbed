@@ -1,7 +1,8 @@
 #!/bin/bash
 set -eu
 
-export LOADBALANCER_IP_ADDRESS=$(gcloud compute addresses list --filter="name=${LOADBALANCER_IP_NAME}" --format="value(address)")
+export LOADBALANCER_IP_ADDRESS=$(gcloud compute addresses list --filter="name=testbedip" --format="value(address)")
+export TB_GITHUB_ORG_NAME=TomoyaKitaura
 
 CURRENT_DIR=$(cd $(dirname $0); pwd)
 
