@@ -18,7 +18,7 @@ spec:
 apiVersion: cert-manager.io/v1alpha2
 kind: Certificate
 metadata:
-  name: testbed.34.84.106.223.nip.io
+  name: testbed.34.84.233.166.nip.io
   namespace: infra
 spec:
   secretName: testbed-cert
@@ -26,17 +26,17 @@ spec:
     name: letsencrypt-issuer
     kind: ClusterIssuer
   dnsNames:
-  - testbed.34.84.106.223.nip.io
-  - argocd.34.84.106.223.nip.io
-  - tekton.34.84.106.223.nip.io
-  - harbor.34.84.106.223.nip.io
-  - notary.34.84.106.223.nip.io
-  - dashboard.34.84.106.223.nip.io
-  - rook.34.84.106.223.nip.io
-  - prometheus.34.84.106.223.nip.io
-  - grafana.34.84.106.223.nip.io
-  - alertmanager.34.84.106.223.nip.io
-  - weave-scope.34.84.106.223.nip.io
-  - yugabyte.34.84.106.223.nip.io
-  - minio.34.84.106.223.nip.io
-  commonName: testbed.34.84.106.223.nip.io
+  - testbed.34.84.233.166.nip.io
+  - argocd.34.84.233.166.nip.io
+  - tekton.34.84.233.166.nip.io
+  - harbor.34.84.233.166.nip.io
+  - notary.34.84.233.166.nip.io
+  - dashboard.34.84.233.166.nip.io
+  - rook.34.84.233.166.nip.io
+  - prometheus.34.84.233.166.nip.io
+  - grafana.34.84.233.166.nip.io
+  - alertmanager.34.84.233.166.nip.io
+  - weave-scope.34.84.233.166.nip.io
+  - yugabyte.34.84.233.166.nip.io
+  - minio.34.84.233.166.nip.io
+  commonName: testbed.34.84.233.166.nip.io

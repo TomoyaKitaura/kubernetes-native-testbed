@@ -9,7 +9,7 @@ git checkout develop
 
 for DIR in manifests microservices; do
   for FILE in `find ${CURRENT_DIR}/../${DIR}/ -type f`; do
-    perl -pi -e "s|__LOADBALANCER_IP_ADDRESS__|${LOADBALANCER_IP_ADDRESS}|g" $FILE;
+    perl -pi -e "s|34.84.106.223|${LOADBALANCER_IP_ADDRESS}|g" $FILE;
     perl -pi -e "s|__TB_GITHUB_ORG_NAME__|${TB_GITHUB_USER}|g" $FILE;
   done
 done
