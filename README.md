@@ -165,7 +165,7 @@ Add webhook settings for forked repo
 from https://github.com/TomoyaKitaura/kubernetes-native-testbed/settings/hooks/new
 
 ```
-* Payload URL: https://tekton.34.84.106.223.nip.io/event-listener
+* Payload URL: https://tekton.34.84.233.166.nip.io/event-listener
 	* replace to your allocated address
 * Content type: application/json
 * Secret: sample-github-webhook-secret
@@ -210,26 +210,26 @@ Following script do:
 
 | Kind | Endpoint | Username | Password |
 | ---- | -------- | -------- | -------- |
-| Image Registry | https://harbor.34.84.106.223.nip.io | admin | admin |
-| CI | https://tekton.34.84.106.223.nip.io | NO | NO |
-| CD | https://argocd.34.84.106.223.nip.io | NO | NO |
-| Object Storage | https://minio.34.84.106.223.nip.io | minio | miniosecret |
-| Block/Shared Storage | https://rook.34.84.106.223.nip.io/ | admin | 'kubectl -n rook-ceph get secret rook-ceph-dashboard-password -o jsonpath="{['data']['password']}" | base64 -d' |
-| Dashboard | https://dashboard.34.84.106.223.nip.io/ | NO | NO |
-| Monitoring | https://grafana.34.84.106.223.nip.io/ | admin | admin |
-| Monitoring | https://prometheus.34.84.106.223.nip.io/ | NO | NO |
-| Monitoring | https://weave-scope.34.84.106.223.nip.io | NO | NO |
-| Alerting | https://alertmanager.34.84.106.223.nip.io/ | NO | NO |
-| Search - ES | https://testbed.34.84.106.223.nip.io/search/es | elastic | 'kubectl -n search get secret search-db-es-elastic-user -o jsonpath="{.data.elastic}" | base64 -d' |
-| Search - Kibana | https://testbed.34.84.106.223.nip.io/search/kibana | elastic | 'kubectl -n search get secret search-db-es-elastic-user -o jsonpath="{.data.elastic}" | base64 -d' |
-| Point - DB | https://yugabyte.34.84.106.223.nip.io/point/master/ | NO | NO |
-| Point - DB | https://yugabyte.34.84.106.223.nip.io/point/tserver/ | NO | NO |
+| Image Registry | https://harbor.34.84.233.166.nip.io | admin | admin |
+| CI | https://tekton.34.84.233.166.nip.io | NO | NO |
+| CD | https://argocd.34.84.233.166.nip.io | NO | NO |
+| Object Storage | https://minio.34.84.233.166.nip.io | minio | miniosecret |
+| Block/Shared Storage | https://rook.34.84.233.166.nip.io/ | admin | 'kubectl -n rook-ceph get secret rook-ceph-dashboard-password -o jsonpath="{['data']['password']}" | base64 -d' |
+| Dashboard | https://dashboard.34.84.233.166.nip.io/ | NO | NO |
+| Monitoring | https://grafana.34.84.233.166.nip.io/ | admin | admin |
+| Monitoring | https://prometheus.34.84.233.166.nip.io/ | NO | NO |
+| Monitoring | https://weave-scope.34.84.233.166.nip.io | NO | NO |
+| Alerting | https://alertmanager.34.84.233.166.nip.io/ | NO | NO |
+| Search - ES | https://testbed.34.84.233.166.nip.io/search/es | elastic | 'kubectl -n search get secret search-db-es-elastic-user -o jsonpath="{.data.elastic}" | base64 -d' |
+| Search - Kibana | https://testbed.34.84.233.166.nip.io/search/kibana | elastic | 'kubectl -n search get secret search-db-es-elastic-user -o jsonpath="{.data.elastic}" | base64 -d' |
+| Point - DB | https://yugabyte.34.84.233.166.nip.io/point/master/ | NO | NO |
+| Point - DB | https://yugabyte.34.84.233.166.nip.io/point/tserver/ | NO | NO |
 
 * Microservice
 
 | Kind | Endpoint | Username | Password |
 | ---- | -------- | -------- | -------- |
-| Admin | https://testbed.34.84.106.223.nip.io/admin/ | NO | NO |
+| Admin | https://testbed.34.84.233.166.nip.io/admin/ | NO | NO |
 
 # Directory structure
 
@@ -256,7 +256,7 @@ source ./development/initialize.sh
 ./development/local-development.sh admin
 
 # access service with  whole system or only local check
-https://testbed.34.84.106.223.nip.io/admin/index.html
+https://testbed.34.84.233.166.nip.io/admin/index.html
   or
 http://localhost:8080/
 ```
